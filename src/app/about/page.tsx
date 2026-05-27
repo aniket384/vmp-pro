@@ -20,34 +20,34 @@ export const metadata: Metadata = createMetadata({
 const work = [
   {
     title: "30+ MVPs shipped",
-    body: "Across SaaS, marketplaces, AI products, and consumer apps. The same person who'll work on yours.",
+    body: "SaaS, marketplaces, AI, consumer. The same engineer who'll work on yours.",
   },
   {
     title: "10M+ downloads",
-    body: "Engineered systems for an app that crossed 10 million downloads. I know what breaks at scale, which means I know how to not build it that way the first time.",
+    body: "Engineered systems for an app past 10 million downloads. I know what breaks at scale.",
   },
   {
-    title: "India TV production systems",
-    body: "Worked on production infrastructure at one of India's largest broadcasters. Real-traffic systems, not toy projects.",
+    title: "India TV production",
+    body: "Real-traffic systems at one of India's largest broadcasters. Not toy projects.",
   },
 ];
 
 const principles = [
   {
     title: "Two clients at a time. No more.",
-    body: "You're not getting a junior dev with my name on the email. You're getting me. The trade-off is I'm not always available — and I'd rather be honest about that than overcommit.",
+    body: "You get me, not a junior dev with my name on the email.",
   },
   {
     title: "Fixed scope. Fixed price. Written.",
-    body: "Every engagement has a one-page scope doc with three columns: In, Not in, Costs extra. Scope creep is the #1 killer of agency relationships and I don't do it.",
+    body: "Three columns in every contract: In, Not in, Costs extra.",
   },
   {
     title: "Daily Loom. One Slack channel.",
-    body: "No email threads. No 12-channel chaos. You hear from me once a day, every weekday, by Loom or written update. You ask questions in one place.",
+    body: "One update per weekday. One place for questions. No chaos.",
   },
   {
     title: "Code freeze 5 days before your pitch.",
-    body: "Non-negotiable. The last 5 days are for rehearsing the demo, not patching the demo. This single rule has saved every investor meeting I've prepped for.",
+    body: "The last 5 days are for rehearsing the demo, not patching it.",
   },
 ];
 

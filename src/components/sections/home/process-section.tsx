@@ -13,9 +13,8 @@ export function ProcessSection() {
               Audit. Rescue. Ship. No drama between.
             </h2>
             <p className="mt-4 text-lg leading-8 text-muted-foreground">
-              One channel. One daily update. One person responsible.
-              Code freezes five days before your pitch — non-negotiable, so
-              your demo gets rehearsed, not patched.
+              One channel. One daily update. Code freeze 5 days before your
+              pitch — so your demo gets rehearsed, not patched.
             </p>
             <ButtonLink href="/audit" variant="secondary" className="mt-8">
               Start with the audit

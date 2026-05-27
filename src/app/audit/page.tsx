@@ -22,27 +22,21 @@ export const metadata: Metadata = createMetadata({
 });
 
 const included = [
-  "Full read of your codebase, schema, and deployment setup",
-  "15–20 minute Loom walkthrough explaining what's actually going on",
-  "Written report: what's broken, what's salvageable, what's missing",
-  "Fixed-price quote to finish it (or honest 'rebuild' recommendation)",
-  "Stack-specific notes: what Cursor/Claude can do, what they can't",
-  "Credited toward any paid project within 30 days",
+  "15–20 minute Loom walkthrough of your code",
+  "Written report: what's broken, what's salvageable",
+  "Fixed-price quote to finish — credited toward any project",
 ];
 
 const sendThis = [
-  "GitHub repo link (read access is fine)",
-  "Or your Lovable / Bolt / Replit / v0 project URL",
-  "Or a zip of the code",
-  "One paragraph on what the product is and who it's for",
-  "The date of your pitch / demo, if there is one",
+  "Repo link or Lovable / Bolt / v0 URL",
+  "One paragraph on what the product is",
+  "Your pitch date, if you have one",
 ];
 
 const notIncluded = [
-  "Code changes (that's the build phase, quoted separately)",
-  "Pitch deck review (different skill, ask a deck specialist)",
-  "Marketing or growth advice (we're engineers)",
-  "Promises that your idea will raise money (nobody can promise that)",
+  "Code changes (that's the build phase)",
+  "Pitch deck review (different skill)",
+  "Promises about whether you'll raise",
 ];
 
 export default function AuditPage() {
@@ -74,10 +68,8 @@ export default function AuditPage() {
               Send me your AI-built project. I&apos;ll tell you the truth in 48 hours.
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-muted-foreground">
-              You spent weeks with Lovable, Cursor, Bolt or v0. You&apos;re not
-              sure what&apos;s salvageable. You have an investor meeting coming
-              up. Before you commit thousands of dollars to a build, get an
-              honest 48-hour read on what you actually have.
+              Before you commit thousands to a build, get an honest 48-hour
+              read on what you actually have.
             </p>
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
               <ButtonLink

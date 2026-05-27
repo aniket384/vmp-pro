@@ -16,8 +16,7 @@ export function ServicesSection() {
             </h2>
           </div>
           <p className="mt-4 text-lg leading-8 text-muted-foreground">
-            Most founders start with the $199 audit. It tells you what your
-            project actually needs before you commit to anything bigger.
+            Most founders start with the audit. It tells you what you actually need.
           </p>
         </div>
 

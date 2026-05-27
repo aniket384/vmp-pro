@@ -14,9 +14,8 @@ export function FounderPainSection() {
               You&apos;re not bad at this. The tools just have a ceiling — and you&apos;ve hit it.
             </h2>
             <p className="mt-5 text-lg leading-8 text-muted-foreground">
-              AI builders are remarkable at the first 70%. They&apos;re not built
-              for the last 30%, which happens to be the part an investor will
-              actually click on.
+              AI tools nail the first 70%. The last 30% is the part an investor
+              actually clicks.
             </p>
             <ButtonLink href="/audit" variant="secondary" className="mt-8">
               Send me your project

@@ -13,8 +13,7 @@ export function FaqSection() {
               The questions you&apos;re actually asking.
             </h2>
             <p className="mt-4 text-lg leading-8 text-muted-foreground">
-              Nothing here is going to surprise you on the first call. If a
-              question isn&apos;t covered, email me — I&apos;ll write a direct answer.
+              Nothing here will surprise you on the first call.
             </p>
             <ButtonLink href="/audit" variant="secondary" className="mt-8">
               Get the audit

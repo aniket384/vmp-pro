@@ -25,10 +25,9 @@ export function HeroSection() {
             </div>
             <div className="intro-rise" style={{ "--intro-delay": "80ms" } as React.CSSProperties}>
               <p className="mt-7 max-w-2xl text-lg leading-8 text-muted-foreground sm:text-xl">
-                Lovable, Cursor, Bolt and v0 got you 70% of the way. We finish the
-                other 30% — auth that works, Stripe that fires, a demo path that
-                survives a live investor click. Two weeks to a working demo. Four
-                weeks to an investor-ready MVP.
+                Lovable, Cursor and Bolt got you 70%. We ship the 30% that
+                actually matters — auth that works, Stripe that fires, a demo
+                that survives a live click.
               </p>
             </div>
             <div className="intro-rise" style={{ "--intro-delay": "140ms" } as React.CSSProperties}>

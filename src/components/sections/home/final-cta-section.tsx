@@ -15,10 +15,8 @@ export function FinalCtaSection() {
                 Send me your project. I&apos;ll tell you the truth in 48 hours.
               </h2>
               <p className="mt-5 max-w-2xl text-base leading-8 opacity-75">
-                Repo link, Lovable URL, Bolt project, v0 export, GitHub access —
-                whatever you&apos;ve got. I&apos;ll record a Loom, write up what&apos;s
-                broken and what it&apos;ll cost to fix, and tell you whether it&apos;s
-                worth finishing or starting fresh.
+                Repo, Lovable URL, Bolt project — whatever you&apos;ve got.
+                Loom + written verdict in 48 hours.
               </p>
             </div>
 
