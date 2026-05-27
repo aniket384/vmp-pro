@@ -5,7 +5,7 @@ import { ButtonLink } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
 import { JsonLd } from "@/components/seo/json-ld";
 import { createMetadata } from "@/lib/seo/metadata";
-import { breadcrumbSchema, webPageSchema } from "@/lib/seo/schema";
+import { breadcrumbSchema, personSchema, webPageSchema } from "@/lib/seo/schema";
 import { siteConfig } from "@/config/site";
 import { founderBio } from "@/content/home";
 
@@ -68,6 +68,7 @@ export default function AboutPage() {
           { name: "About", url: `${siteConfig.url}/about` },
         ])}
       />
+      <JsonLd data={personSchema()} />
 
       <section className="border-b border-border py-16 sm:py-20 lg:py-24">
         <Container>

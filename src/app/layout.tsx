@@ -21,8 +21,8 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: "Premium MVP Development Agency for Startup Founders",
-    template: "%s | Northstar Studio",
+    default: "Finish your AI-built MVP before your investor pitch | Northstar Labs",
+    template: "%s | Northstar Labs",
   },
   description: siteConfig.description,
   applicationName: siteConfig.name,
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "Premium MVP Development Agency for Startup Founders",
+    title: "Finish your AI-built MVP before your investor pitch",
     description: siteConfig.description,
     url: siteConfig.url,
     siteName: siteConfig.name,
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Premium MVP Development Agency for Startup Founders",
+    title: "Finish your AI-built MVP before your investor pitch",
     description: siteConfig.description,
   },
   robots: {
@@ -46,12 +46,13 @@ export const metadata: Metadata = {
     follow: true,
   },
   keywords: [
-    "MVP development agency",
-    "startup MVP development",
-    "SaaS development agency",
-    "AI product development",
-    "startup product engineering",
-    "MVP development for non technical founders",
+    "finish my Lovable app",
+    "fix AI-generated code",
+    "Cursor codebase rescue",
+    "Bolt project to production",
+    "MVP rescue agency",
+    "investor-ready MVP",
+    "non-technical founder developer",
   ],
 };
 

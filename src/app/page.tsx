@@ -8,7 +8,7 @@ import { ProcessSection } from "@/components/sections/home/process-section";
 import { ServicesSection } from "@/components/sections/home/services-section";
 import { TrustSection } from "@/components/sections/home/trust-section";
 import { JsonLd } from "@/components/seo/json-ld";
-import { organizationSchema, serviceSchema, webPageSchema, websiteSchema } from "@/lib/seo/schema";
+import { auditOfferSchema, faqPageSchema, organizationSchema, serviceSchema, webPageSchema, websiteSchema } from "@/lib/seo/schema";
 import { createMetadata } from "@/lib/seo/metadata";
 
 export const metadata: Metadata = createMetadata({
@@ -31,6 +31,8 @@ export default function Home() {
       <JsonLd data={organizationSchema()} />
       <JsonLd data={websiteSchema()} />
       <JsonLd data={serviceSchema()} />
+      <JsonLd data={auditOfferSchema()} />
+      <JsonLd data={faqPageSchema()} />
       <JsonLd
         data={webPageSchema({
           name: "Finish your AI-built MVP before your investor pitch",

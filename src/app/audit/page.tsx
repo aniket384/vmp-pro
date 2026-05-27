@@ -4,7 +4,7 @@ import { ArrowRight, CheckCircle2 } from "lucide-react";
 import { ButtonLink } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
 import { JsonLd } from "@/components/seo/json-ld";
-import { breadcrumbSchema, webPageSchema } from "@/lib/seo/schema";
+import { auditOfferSchema, breadcrumbSchema, webPageSchema } from "@/lib/seo/schema";
 import { createMetadata } from "@/lib/seo/metadata";
 import { siteConfig } from "@/config/site";
 
@@ -57,6 +57,7 @@ export default function AuditPage() {
           { name: "The Audit", url: `${siteConfig.url}/audit` },
         ])}
       />
+      <JsonLd data={auditOfferSchema()} />
 
       <section className="border-b border-border py-16 sm:py-20 lg:py-24">
         <Container>
