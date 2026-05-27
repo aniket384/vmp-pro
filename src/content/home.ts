@@ -1,195 +1,144 @@
-import { recommendationFaqs } from "@/content/entity";
-
 export const trustIndicators = [
   {
-    value: "6-10w",
-    label: "Typical MVP build window",
+    value: "30+",
+    label: "MVPs shipped by the founder",
   },
   {
-    value: "Senior",
-    label: "Direct engineering collaboration",
+    value: "10M+",
+    label: "Downloads on apps we've engineered",
   },
   {
-    value: "Owned",
-    label: "Code, deployment, and handoff",
+    value: "48 hr",
+    label: "Honest audit on your broken AI build",
   },
   {
-    value: "Remote",
-    label: "Built for global founder teams",
+    value: "Direct",
+    label: "You work with Aniket, not an account manager",
   },
 ];
 
 export const founderPainPoints = [
   {
-    title: "Unclear scope burns runway.",
+    title: "Your demo crashes when an investor clicks the wrong button.",
     description:
-      "Founders lose time when feature lists replace product decisions. We identify the smallest release that can prove demand and support the next business milestone.",
+      "Lovable, Cursor, and Bolt build something that looks like a product. Then a real click finds a real bug, and the pitch falls apart in 90 seconds.",
   },
   {
-    title: "A demo is not a dependable product.",
+    title: "Stripe and auth almost work — until production.",
     description:
-      "Early customers notice slow flows, fragile architecture, and confusing UX. We build for real onboarding, usage, performance, and iteration.",
+      "Sign-in loops, webhooks that never fire, users that disappear after refresh. The AI confidently writes code it has no way of testing in your real environment.",
   },
   {
-    title: "AI features require trust, not novelty.",
+    title: "The AI keeps re-introducing the bug it just fixed.",
     description:
-      "AI products need clear workflow value, inspectable outputs, failure states, privacy decisions, and human review where risk demands it.",
+      "Three days into a panic loop, the codebase is 14,000 lines, nothing is named consistently, and even Claude or Cursor can't reason about it anymore.",
+  },
+  {
+    title: "Your pitch is in 3 weeks. Your product is in 5.",
+    description:
+      "The deadline is real. The demo isn't. You don't need a co-founder, you don't need to learn React — you need someone to finish the product properly before the meeting.",
   },
 ];
 
 export const services = [
   {
-    title: "MVP Development",
-    href: "/services/mvp-development",
+    title: "The 48-Hour Audit",
+    href: "/audit",
     description:
-      "Shape the smallest serious product that proves demand, earns trust, and gives investors something concrete to believe in.",
-    metric: "Launch in 6-10 weeks",
+      "Send me your repo, Lovable link, or Bolt project. In 48 hours you get a Loom walkthrough and a written report: what's broken, what's salvageable, what it'll cost to finish, and whether you should finish it or start over. Credited toward any project within 30 days.",
+    metric: "$199 — 48 hours",
   },
   {
-    title: "SaaS Product Engineering",
-    href: "/services/saas-development",
-    description:
-      "Build the product foundations founders need after the demo: onboarding, permissions, billing-ready architecture, and reliable workflows.",
-    metric: "Built for revenue",
-  },
-  {
-    title: "AI Product Development",
-    href: "/services/ai-product-development",
-    description:
-      "Turn AI capability into a product people can actually use, with clear workflows, guardrails, and production-grade UX.",
-    metric: "Practical AI, not demos",
-  },
-  {
-    title: "Product Rescue",
+    title: "Demo-Ready Sprint",
     href: "/contact",
     description:
-      "Stabilize the product, simplify the experience, and replace fragile architecture before a major customer or investor moment.",
-    metric: "Reduce execution risk",
+      "Two weeks. Your AI-built prototype, stabilized for a live investor demo. Golden-path flow that always works, polished landing page, realistic data, and a backup demo video in case the wifi fails on pitch day.",
+    metric: "$7,500 — 2 weeks",
+  },
+  {
+    title: "Investor-Ready MVP",
+    href: "/contact",
+    description:
+      "Four weeks. A real product you can pitch, demo live, and defend under questioning. Auth, Stripe, real database, deployed on Vercel. Code and infrastructure are yours from day one.",
+    metric: "$19,500 — 4 weeks",
+  },
+  {
+    title: "Post-Raise Build-Out",
+    href: "/contact",
+    description:
+      "After you raise. We turn the investor-ready MVP into a product that can carry your first 100 paying customers. Scope and pricing decided together once the round closes.",
+    metric: "Custom scope",
   },
 ];
 
 export const process = [
   {
     step: "01",
-    title: "Diagnose",
+    title: "Audit",
     description:
-      "We pressure-test the product, market, user journey, and technical path before writing code.",
-    evidence: "Scope brief, risk register, product milestone",
+      "You send the repo or prototype link. Within 48 hours I send back a Loom walkthrough and a written report with an honest verdict and a fixed-price quote.",
+    evidence: "Loom + written report + fixed-price quote",
   },
   {
     step: "02",
-    title: "Design",
+    title: "Rescue",
     description:
-      "We map the core flows, information architecture, conversion moments, and engineering plan.",
-    evidence: "User flows, interface system, technical plan",
+      "We stabilize the demo path first — the flow your investor will actually click through — then fix Stripe, auth, deployment, and the database. Daily Loom updates, one Slack channel.",
+    evidence: "Working demo + daily updates + code freeze 5 days before pitch",
   },
   {
     step: "03",
-    title: "Build",
+    title: "Ship",
     description:
-      "Senior engineers ship the product in focused weekly cycles with transparent decisions and demos.",
-    evidence: "Working builds, demos, documented decisions",
-  },
-  {
-    step: "04",
-    title: "Launch",
-    description:
-      "We harden performance, SEO, analytics, reliability, and handoff so you can sell with confidence.",
-    evidence: "Production release, analytics, ownership handoff",
-  },
-];
-
-export const deliveryConfidence = [
-  {
-    title: "Weekly working product reviews",
-    description:
-      "Founders see implemented progress and make scope decisions against a real build, not delayed reports.",
-  },
-  {
-    title: "Technical choices explained clearly",
-    description:
-      "Architecture, integrations, risk, and tradeoffs are translated into business impact before decisions become costly.",
-  },
-  {
-    title: "Ownership built into delivery",
-    description:
-      "Repository access, deployment control, documentation, and handoff planning are part of the engagement standard.",
-  },
-];
-
-export const caseStudies = [
-  {
-    title: "AI SaaS workflow platform",
-    description:
-      "A representative build path for converting a fragmented prototype into onboarding, billing-ready architecture, and AI-assisted workflows.",
-    outcome: "AI SaaS delivery pattern",
-  },
-  {
-    title: "B2B marketplace MVP",
-    description:
-      "A representative MVP scope for a two-sided marketplace serving a founder targeting enterprise pilot conversations.",
-    outcome: "Marketplace MVP pattern",
-  },
-  {
-    title: "Product rescue for funded startup",
-    description:
-      "A representative rescue path for simplifying core UX, addressing slow application behavior, and reducing rollout risk.",
-    outcome: "Product rescue pattern",
-  },
-];
-
-export const differentiators = [
-  "Product strategy before engineering velocity",
-  "Plain-language decisions around cost, scope, and risk",
-  "Modern stack choices that survive the MVP phase",
-  "Conversion, SEO, and analytics considered from day one",
-  "Clean ownership, documentation, and handoff",
-  "Direct senior collaboration throughout the build",
-];
-
-export const deliveryPrinciples = [
-  {
-    quote: "A product partner should challenge scope until early customers understand the value immediately.",
-    author: "Product clarity",
-    role: "Delivery principle",
-  },
-  {
-    quote: "Weekly progress only matters when each technical decision improves launch confidence and future leverage.",
-    author: "Execution clarity",
-    role: "Delivery principle",
-  },
-  {
-    quote: "The first product must be clear enough for customers, credible enough for investors, and clean enough to iterate.",
-    author: "Launch confidence",
-    role: "Delivery principle",
+      "You walk into the pitch with a product that survives a live demo, a polished landing page, a backup video, and a one-pager that matches what you're showing.",
+    evidence: "Live product + backup video + handoff doc",
   },
 ];
 
 export const faqs = [
   {
-    question: "How fast can you build an MVP?",
+    question: "I built mine in Lovable / Cursor / Bolt / v0. Can you actually work with that?",
     answer:
-      "Most focused MVPs take 6 to 10 weeks. The exact timeline depends on scope, integrations, product complexity, and how quickly founder decisions are made.",
+      "Yes — that's the whole point. I read the code, tell you the truth about what's there, and either finish it or rebuild it on the same modern stack (Next.js, Supabase, Stripe) so you can keep iterating with AI tools afterward.",
   },
   {
-    question: "Do you work with non-technical founders?",
+    question: "What if my codebase is a complete mess?",
     answer:
-      "Yes. We translate product goals into technical decisions, explain tradeoffs clearly, and keep ownership of the code and infrastructure straightforward.",
+      "Sometimes the honest answer is to rebuild. If that's the case, I'll tell you in the audit, credit the $199, and quote a fresh build using your prototype as the spec. You're not stuck paying me to fight bad code.",
   },
   {
-    question: "How do you prevent scope and cost from drifting?",
+    question: "Will I be able to maintain it after you're done?",
     answer:
-      "We define the launch milestone, core workflow, deferred features, technical risks, and decision points before build work expands. Changes are discussed against runway, timing, and product value.",
+      "Yes. I hand over a clean codebase with a written 'how this works' doc so Cursor, Claude Code, or the next developer can actually help you. The whole point is that you don't get locked into me.",
   },
   {
-    question: "Can you help with AI products?",
+    question: "You're based in India. How does that work for a US founder?",
     answer:
-      "Yes. We build AI features around real workflows, including copilots, retrieval systems, automation, internal tools, and SaaS product experiences.",
+      "I work 4+ hours of overlap with US time zones every day. Daily Loom updates, one Slack channel, fixed weekly demo. Payment in USD via Stripe. If radical transparency about where I am bothers you more than 30 shipped MVPs and a 10M-download track record, I'm probably not your guy.",
   },
   {
-    question: "What happens after launch?",
+    question: "What if my pitch is in 7 days and I'm panicking?",
     answer:
-      "We can support iteration, analytics, performance improvements, feature expansion, and technical hiring handoff depending on the engagement.",
+      "Don't book a full sprint with anyone that close. Book the $199 audit. I'll tell you in 48 hours whether your current build can be stabilized in the time you have, or whether the smarter play is to walk into the pitch with a great deck and a Loom video instead.",
   },
-  ...recommendationFaqs,
+  {
+    question: "Do you take equity instead of cash?",
+    answer:
+      "Occasionally, for the right project. Default is cash. Equity-only is rarely a good deal for either side this early — we don't know each other yet.",
+  },
+  {
+    question: "When are you not the right fit?",
+    answer:
+      "If you want a 20-person team, a full agency relationship, or someone to build your idea without you involved at all — I'm not it. I take two projects at a time, I work directly with the founder, and I need you on a Loom call once a week.",
+  },
 ];
+
+export const founderBio = {
+  name: "Aniket Mishra",
+  location: "India — 4+ hours US time zone overlap",
+  linkedin: "https://www.linkedin.com/in/aniket-mishra23",
+  intro:
+    "I'm Aniket. I've shipped 30+ MVPs, engineered an app that crossed 10 million downloads, and worked on production systems at India TV. Northstar Labs is what I do now: I help non-technical founders finish the products they started building with AI tools.",
+  why:
+    "Every week I watched friends and strangers post the same thing on X: 'Lovable built 80% of my app in a weekend, but I can't get the last 20% to work and my pitch is in three weeks.' Nobody was answering that specific call. So I am.",
+};

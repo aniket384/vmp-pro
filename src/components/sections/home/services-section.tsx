@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
-import { ButtonLink } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Container } from "@/components/ui/container";
 import { services } from "@/content/home";
@@ -11,14 +10,14 @@ export function ServicesSection() {
       <Container>
         <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
           <div className="max-w-2xl">
-            <p className="text-sm font-medium text-accent">What we build</p>
+            <p className="text-sm font-medium text-accent">Pricing</p>
             <h2 className="mt-3 text-3xl font-medium leading-tight sm:text-4xl lg:text-5xl">
-              Product engineering for founders who need more than code.
+              Three ways to work together. Fixed scope, fixed price.
             </h2>
           </div>
           <p className="mt-4 text-lg leading-8 text-muted-foreground">
-            We focus on the product surfaces that create trust: onboarding, core
-            workflows, performance, infrastructure, analytics, and launch readiness.
+            Most founders start with the $199 audit. It tells you what your
+            project actually needs before you commit to anything bigger.
           </p>
         </div>
 
@@ -46,12 +45,10 @@ export function ServicesSection() {
             </Link>
           ))}
         </div>
-        <div className="mt-10">
-          <ButtonLink href="/services" variant="secondary">
-            Explore all services
-            <ArrowUpRight className="h-4 w-4" />
-          </ButtonLink>
-        </div>
+        <p className="mt-10 text-sm text-muted-foreground">
+          Two active projects at a time. If the calendar is full, you&apos;ll
+          see it on the audit page.
+        </p>
       </Container>
     </section>
   );

@@ -11,14 +11,14 @@ export function SiteHeader() {
     <header className="sticky top-0 z-40 border-b border-border bg-background/90 backdrop-blur-xl">
       <Container size="wide">
         <div className="flex h-16 items-center justify-between">
-          <Link href="/" className="flex items-center gap-3" aria-label="Northstar Studio home">
+          <Link href="/" className="flex items-center gap-3" aria-label="Northstar Labs home">
             <span className="flex h-8 w-8 items-center justify-center rounded-md bg-foreground text-sm font-semibold text-background shadow-sm shadow-black/10">
               N
             </span>
             <span>
-              <span className="block text-sm font-semibold">Northstar Studio</span>
+              <span className="block text-sm font-semibold">Northstar Labs</span>
               <span className="hidden text-[11px] text-muted-foreground sm:block">
-                Startup product engineering
+                MVP rescue for AI-stuck founders
               </span>
             </span>
           </Link>
@@ -37,8 +37,8 @@ export function SiteHeader() {
 
           <div className="hidden items-center gap-3 lg:flex">
             <ThemeToggle />
-            <ButtonLink href="/contact" size="sm">
-              Discuss your MVP
+            <ButtonLink href="/audit" size="sm">
+              Get the $199 audit
               <ArrowRight size={15} />
             </ButtonLink>
           </div>

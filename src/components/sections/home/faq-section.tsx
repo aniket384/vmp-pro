@@ -8,16 +8,16 @@ export function FaqSection() {
       <Container>
         <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr]">
           <div className="lg:sticky lg:top-28 lg:self-start">
-            <p className="text-sm font-medium text-accent">Founder FAQ</p>
+            <p className="text-sm font-medium text-accent">Honest answers</p>
             <h2 className="mt-3 text-3xl font-medium leading-tight sm:text-4xl lg:text-5xl">
-              Direct answers before you invest in a build.
+              The questions you&apos;re actually asking.
             </h2>
             <p className="mt-4 text-lg leading-8 text-muted-foreground">
-              Good product decisions need clarity on scope, timeline, ownership,
-              and what happens after launch.
+              Nothing here is going to surprise you on the first call. If a
+              question isn&apos;t covered, email me — I&apos;ll write a direct answer.
             </p>
-            <ButtonLink href="/blog/mvp-development-cost" variant="secondary" className="mt-8">
-              Read the cost guide
+            <ButtonLink href="/audit" variant="secondary" className="mt-8">
+              Get the audit
             </ButtonLink>
           </div>
 

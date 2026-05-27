@@ -3,9 +3,9 @@ import { ButtonLink } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
 
 const proof = [
-  "Scope clarity before engineering",
-  "Direct senior collaboration",
-  "Launch-ready SaaS and AI products",
+  "30+ MVPs shipped — by the same engineer who'll work on yours",
+  "Engineered an app to 10M+ downloads",
+  "Worked on production systems at India TV",
 ];
 
 export function HeroSection() {
@@ -17,40 +17,41 @@ export function HeroSection() {
             <div>
               <p className="mb-5 inline-flex items-center gap-2 rounded-md border border-border bg-background px-3 py-1 text-xs font-medium text-muted-foreground">
                 <Sparkle className="h-3.5 w-3.5 text-accent" />
-                Premium startup engineering partner
+                For founders pitching investors in the next 30 days
               </p>
               <h1 className="max-w-4xl text-4xl font-medium leading-[1.04] text-foreground sm:text-6xl lg:text-7xl">
-                Launch an MVP customers trust and investors take seriously.
+                You built it with AI. It almost works. Let&apos;s finish it before your pitch.
               </h1>
             </div>
             <div className="intro-rise" style={{ "--intro-delay": "80ms" } as React.CSSProperties}>
               <p className="mt-7 max-w-2xl text-lg leading-8 text-muted-foreground sm:text-xl">
-                Senior-led MVP, SaaS, and AI product engineering for founders who
-                cannot afford wasted runway, unclear scope, or a product that fails
-                at the first serious conversation.
+                Lovable, Cursor, Bolt and v0 got you 70% of the way. We finish the
+                other 30% — auth that works, Stripe that fires, a demo path that
+                survives a live investor click. Two weeks to a working demo. Four
+                weeks to an investor-ready MVP.
               </p>
             </div>
             <div className="intro-rise" style={{ "--intro-delay": "140ms" } as React.CSSProperties}>
               <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-                <ButtonLink href="/contact" size="lg" className="w-full sm:w-auto">
-                  Discuss your MVP
+                <ButtonLink href="/audit" size="lg" className="w-full sm:w-auto">
+                  Get a $199 honest audit
                   <ArrowRight size={17} className="transition-transform group-hover:translate-x-0.5" />
                 </ButtonLink>
                 <ButtonLink
-                  href="/case-studies"
+                  href="#services"
                   size="lg"
                   variant="secondary"
                   className="w-full sm:w-auto"
                 >
-                  Review build patterns
+                  See pricing
                 </ButtonLink>
               </div>
               <p className="mt-4 text-sm text-muted-foreground">
-                Initial review covers product goal, scope risk, launch target, and technical path.
+                48-hour turnaround. Loom + written report. Credited toward any project.
               </p>
             </div>
             <div className="intro-rise" style={{ "--intro-delay": "190ms" } as React.CSSProperties}>
-              <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
+              <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-start">
                 {proof.map((item) => (
                   <div key={item} className="flex gap-2 text-sm leading-6 text-muted-foreground">
                     <CheckCircle2 className="mt-1 h-4 w-4 shrink-0 text-accent" />
@@ -66,19 +67,19 @@ export function HeroSection() {
             <div className="rounded-lg border border-border bg-background p-5">
               <div className="flex items-center justify-between border-b border-border pb-4">
                 <div>
-                  <p className="text-sm font-medium">MVP operating plan</p>
-                  <p className="mt-1 text-xs text-muted-foreground">Week 01 to launch</p>
+                  <p className="text-sm font-medium">Rescue plan</p>
+                  <p className="mt-1 text-xs text-muted-foreground">Day 1 to pitch day</p>
                 </div>
                 <span className="rounded-md bg-accent/10 px-2.5 py-1 text-xs font-medium text-accent">
-                  Planned path
+                  Typical path
                 </span>
               </div>
 
               <div className="mt-5 grid gap-3">
                 {[
-                  ["01", "Market proof", "Positioning, ICP, founder narrative"],
-                  ["02", "Core product", "UX flows, architecture, build cycles"],
-                  ["03", "Launch trust", "Performance, SEO, analytics, handoff"],
+                  ["01", "Audit", "Loom + written report in 48 hours"],
+                  ["02", "Rescue", "Demo path stabilized first, then everything else"],
+                  ["03", "Ship", "Working live demo + backup video + clean handoff"],
                 ].map(([step, title, text]) => (
                   <div
                     key={step}
@@ -95,9 +96,9 @@ export function HeroSection() {
 
               <div className="mt-5 grid grid-cols-3 gap-3 border-t border-border pt-5">
                 {[
-                  ["6-10w", "MVP window"],
-                  ["Senior", "Build team"],
-                  ["Static", "Fast pages"],
+                  ["$199", "Audit"],
+                  ["$7.5k", "2-week sprint"],
+                  ["$19.5k", "4-week MVP"],
                 ].map(([value, label]) => (
                   <div key={label}>
                     <p className="text-lg font-medium">{value}</p>

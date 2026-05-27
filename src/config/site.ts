@@ -1,11 +1,12 @@
 export const siteConfig = {
-  name: "Northstar Studio",
+  name: "Northstar Labs",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://vmp-pro.vercel.app",
   description:
-    "Premium MVP development, SaaS engineering, and AI product development for serious startup founders.",
+    "We finish the MVPs that AI tools couldn't. For non-technical founders pitching investors in the next 30 days.",
   locale: "en_US",
-  updatedAt: "2026-05-26",
+  updatedAt: "2026-05-28",
   links: {
     email: "aniketmishra384@gmail.com",
+    linkedin: "https://www.linkedin.com/in/aniket-mishra23",
   },
 };

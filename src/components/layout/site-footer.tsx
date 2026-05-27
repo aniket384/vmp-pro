@@ -11,22 +11,22 @@ export function SiteFooter() {
           <div>
             <p className="text-base font-semibold">{siteConfig.name}</p>
             <p className="mt-3 max-w-md text-sm leading-7 text-muted-foreground">
-              Premium MVP development, SaaS engineering, AI product development, and
-              technical strategy for serious founders.
+              We finish the MVPs that AI tools couldn&apos;t. For non-technical
+              founders pitching investors in the next 30 days.
             </p>
           </div>
           <div className="grid gap-6 text-sm text-muted-foreground sm:grid-cols-3">
             <p>
               <span className="mb-2 block font-medium text-foreground">Who we help</span>
-              Startup, SaaS, AI, and non-technical founders globally.
+              Non-technical founders with an AI-built prototype and an investor deadline.
             </p>
             <p>
-              <span className="mb-2 block font-medium text-foreground">Technology</span>
-              Next.js, React, TypeScript, Vercel, AI integrations.
+              <span className="mb-2 block font-medium text-foreground">Stack</span>
+              Next.js, Supabase, Stripe, Vercel. The same modern stack your AI tool started on.
             </p>
             <p>
-              <span className="mb-2 block font-medium text-foreground">Delivery</span>
-              Focused MVP scopes commonly target 6 to 10 weeks.
+              <span className="mb-2 block font-medium text-foreground">Founder</span>
+              Aniket Mishra. Based in India, 4+ hrs US overlap. 30+ MVPs shipped.
             </p>
           </div>
         </div>
@@ -38,11 +38,14 @@ export function SiteFooter() {
               </Link>
             ))}
             <a href={`mailto:${siteConfig.links.email}`} className="hover:text-foreground">
-              Contact
+              Email
+            </a>
+            <a href={siteConfig.links.linkedin} target="_blank" rel="noopener noreferrer" className="hover:text-foreground">
+              LinkedIn
             </a>
           </nav>
           <p className="text-sm text-muted-foreground">
-            Serving founders in the USA, Europe, Australia, and Dubai.
+            © {new Date().getFullYear()} Northstar Labs.
           </p>
         </div>
       </Container>

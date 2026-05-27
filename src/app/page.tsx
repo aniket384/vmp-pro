@@ -1,33 +1,28 @@
 import type { Metadata } from "next";
-import { CaseStudiesSection } from "@/components/sections/home/case-studies-section";
 import { FaqSection } from "@/components/sections/home/faq-section";
 import { FinalCtaSection } from "@/components/sections/home/final-cta-section";
 import { FounderPainSection } from "@/components/sections/home/founder-pain-section";
 import { HeroSection } from "@/components/sections/home/hero-section";
 import { MobileConversionBar } from "@/components/sections/home/mobile-conversion-bar";
 import { ProcessSection } from "@/components/sections/home/process-section";
-import { DeliveryConfidenceSection } from "@/components/sections/home/delivery-confidence-section";
 import { ServicesSection } from "@/components/sections/home/services-section";
-import { TestimonialsSection } from "@/components/sections/home/testimonials-section";
 import { TrustSection } from "@/components/sections/home/trust-section";
-import { WhyChooseUsSection } from "@/components/sections/home/why-choose-us-section";
-import { FounderProof } from "@/components/sections/shared/founder-proof";
 import { JsonLd } from "@/components/seo/json-ld";
 import { organizationSchema, serviceSchema, webPageSchema, websiteSchema } from "@/lib/seo/schema";
 import { createMetadata } from "@/lib/seo/metadata";
 
 export const metadata: Metadata = createMetadata({
-  title: "Premium MVP Development Agency for Startup Founders",
+  title: "Finish your AI-built MVP before your investor pitch",
   description:
-    "Northstar Studio builds investor-ready MVPs, SaaS platforms, and AI products for serious startup founders.",
+    "We finish the MVPs that Lovable, Cursor, Bolt and v0 couldn't — for non-technical founders pitching investors in the next 30 days. $199 audit. $7.5k 2-week sprint. $19.5k 4-week MVP.",
   path: "/",
   keywords: [
-    "MVP development agency",
-    "startup MVP developers",
-    "AI MVP development company",
-    "SaaS MVP agency",
+    "finish my Lovable app",
+    "fix AI-generated code",
+    "MVP rescue agency",
+    "investor-ready MVP",
+    "non-technical founder developer",
   ],
-  image: "/images/case-studies/analytics-platform.jpg",
 });
 
 export default function Home() {
@@ -38,23 +33,18 @@ export default function Home() {
       <JsonLd data={serviceSchema()} />
       <JsonLd
         data={webPageSchema({
-          name: "Premium MVP Development Agency for Startup Founders",
+          name: "Finish your AI-built MVP before your investor pitch",
           description:
-            "Northstar Studio builds investor-ready MVPs, SaaS platforms, and AI products for serious startup founders.",
+            "We finish the MVPs that Lovable, Cursor, Bolt and v0 couldn't — for non-technical founders pitching investors in the next 30 days.",
           path: "/",
-          topics: ["MVP development agency", "SaaS MVP development", "AI MVP development"],
+          topics: ["MVP rescue", "AI-built MVP completion", "investor-ready MVP"],
         })}
       />
       <HeroSection />
       <TrustSection />
       <FounderPainSection />
-      <FounderProof />
       <ServicesSection />
       <ProcessSection />
-      <DeliveryConfidenceSection />
-      <CaseStudiesSection />
-      <WhyChooseUsSection />
-      <TestimonialsSection />
       <FaqSection />
       <FinalCtaSection />
       <MobileConversionBar />

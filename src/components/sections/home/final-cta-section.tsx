@@ -10,39 +10,40 @@ export function FinalCtaSection() {
         <div className="overflow-hidden rounded-lg border border-border bg-foreground p-8 text-background shadow-lg shadow-black/10 sm:p-10 lg:p-12 dark:shadow-black/30">
           <div className="grid gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-end">
             <div>
-              <p className="text-sm font-medium opacity-70">Ready for a serious build?</p>
+              <p className="text-sm font-medium opacity-70">One CTA. That&apos;s it.</p>
               <h2 className="mt-3 max-w-3xl text-3xl font-medium leading-tight sm:text-4xl lg:text-5xl">
-                Turn your next product milestone into a credible launch.
+                Send me your project. I&apos;ll tell you the truth in 48 hours.
               </h2>
               <p className="mt-5 max-w-2xl text-base leading-8 opacity-75">
-                Tell us what you are building, where the business is going, and what
-                needs to be true for the MVP to matter. We will reply with the
-                clearest next step.
+                Repo link, Lovable URL, Bolt project, v0 export, GitHub access —
+                whatever you&apos;ve got. I&apos;ll record a Loom, write up what&apos;s
+                broken and what it&apos;ll cost to fix, and tell you whether it&apos;s
+                worth finishing or starting fresh.
               </p>
             </div>
 
             <div>
               <div className="grid gap-3 rounded-lg border border-background/15 bg-background/[0.04] p-4 text-sm opacity-85">
-                <p>Best fit: funded teams, serious founder-led MVPs, SaaS launches, AI products, and product rescue.</p>
-                <p>Expect: an honest fit assessment, explicit risk discussion, and a scoped next step.</p>
+                <p>$199 audit, credited toward any paid project within 30 days.</p>
+                <p>If your codebase is unsalvageable, I&apos;ll tell you and refund the audit toward a fresh build.</p>
               </div>
               <div className="mt-5 flex flex-col gap-3 sm:flex-row lg:justify-end">
                 <ButtonLink
-                  href="/contact"
+                  href="/audit"
                   size="lg"
                   className="bg-background text-foreground hover:opacity-90"
                 >
                   <ArrowRight size={17} />
-                  Discuss your MVP
+                  Get the audit — $199
                 </ButtonLink>
                 <ButtonLink
-                  href={`mailto:${siteConfig.links.email}?subject=MVP build inquiry`}
+                  href={`mailto:${siteConfig.links.email}?subject=Audit request`}
                   size="lg"
                   variant="secondary"
                   className="border-background/20 bg-transparent text-background hover:bg-background/10"
                 >
                   <Mail size={17} />
-                  Email directly
+                  Email Aniket
                 </ButtonLink>
               </div>
             </div>

@@ -8,16 +8,17 @@ export function ProcessSection() {
       <Container>
         <div className="grid gap-12 lg:grid-cols-[0.78fr_1.22fr] lg:items-start">
           <div className="lg:sticky lg:top-28">
-            <p className="text-sm font-medium text-accent">How we work</p>
+            <p className="text-sm font-medium text-accent">How it works</p>
             <h2 className="mt-3 text-3xl font-medium leading-tight sm:text-4xl lg:text-5xl">
-              A focused build system for reducing founder risk.
+              Audit. Rescue. Ship. No drama between.
             </h2>
             <p className="mt-4 text-lg leading-8 text-muted-foreground">
-              Momentum matters, but only when the product direction is clear. Our
-              process keeps strategy, UX, and engineering moving together.
+              One channel. One daily update. One person responsible.
+              Code freezes five days before your pitch — non-negotiable, so
+              your demo gets rehearsed, not patched.
             </p>
-            <ButtonLink href="/process" variant="secondary" className="mt-8">
-              View the full process
+            <ButtonLink href="/audit" variant="secondary" className="mt-8">
+              Start with the audit
             </ButtonLink>
           </div>
 
